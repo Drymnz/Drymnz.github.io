@@ -38,7 +38,6 @@ body {
 
 #card {
     margin: 5vh 2.5% 5vh 2.5%;
-    background-color: brown;
     display: flex;
     flex-direction: row;
     height: 90vh;
@@ -142,24 +141,25 @@ svg {
     background: #01a3a3;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.information_table td
-{
+
+.information_table td {
     transform: translateY(-15px);
 }
-.content
-{
+
+.content {
     color: #111;
     border-radius: 1px;
     transform: translateY(-15px);
     background: #029d9d;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.information_table h2
-{
+
+.information_table h2 {
     margin-bottom: 25px;
 }
-.element:hover ,.content:hover
-{
+
+.element:hover,
+.content:hover {
     background: #08bfbf;
 }
 
@@ -239,6 +239,16 @@ svg {
     width: 100%;
 }
 
+@media (min-width: 1156px) {
+    #title_cell {
+        display: none !important;
+    }
+    #name_cell
+    {
+        display: none !important;
+    }
+}
+
 @media (max-width: 1156px) {
     #card {
         height: auto;
@@ -246,21 +256,43 @@ svg {
         flex-direction: column;
     }
 
-    #person_information 
-    {
+    #person_information {
         max-width: 1156px;
         min-width: 358px;
     }
-    #divider
-    {
-        height: 20px;
+
+    #divider {
+        height: 5px;
         width: 100%;
     }
-    .sub_information 
-    {
+
+    .sub_information {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center
+    }
+
+    #name {
+        display: none !important;
+    }
+
+    #title {
+        display: none !important;
+    }
+
+    #title_cell {
+        display: flex;
+        justify-content: center;
+    }
+    #name_cell
+    {
+        display: flex;
+        justify-content: center;
+    }
+    #name_cell
+    {
+        color: #111;
+        font-weight: bolder;
     }
 }
