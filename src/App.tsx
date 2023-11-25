@@ -1,24 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { SizeSelector } from "./Pages/SizeSelector";
+/* import { useState } from "react"; */
+/* import "./App.css"; */
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { ComponeteDos } from "./Pages/ComponeteDos";
 import { Layout } from "./Pages/Layout";
+import { Error404 } from "./Pages/Error/404";
+import { Home } from "./Pages/Home";
+import { Contact } from "./Pages/Contact";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/Drymnz.github.io/" Component={Layout}>
-          <Route path="/Drymnz.github.io/" Component={SizeSelector} />
-          <Route
-            path="/Drymnz.github.io/ComponenteDos"
-            Component={ComponeteDos}
-          />
+          {/* home */}
+          <Route path="/Drymnz.github.io/" Component={Home} />
+          <Route path="/Drymnz.github.io/contact" Component={Contact} />
         </Route>
-        {/* <Route path="*" Component={}></Route> */}
+        <Route path="*" Component={Error404}></Route>
       </Routes>
     </BrowserRouter>
   );

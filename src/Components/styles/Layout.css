@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+#nav {
+    border: 10px;
+    height: 100vh;
+}
+
+#error-404 {
+    font-size: 250px;
+}
+
+.con-ico {
+    font-size: 50px;
+
+}
+
+@media (max-width: 120px) {
+    .con-ico {
+        font-size: 50000px;
+    }
+}
+.right
+{
+    background: #5aa6a6;
+}
+.left{
+    color: #5aa6a6;
+    background: #761C1C;
+}
