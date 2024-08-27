@@ -1,0 +1,14 @@
+{
+    "Technology":[
+        {
+            "Title": "React",
+            "Level": "30",
+            "Img": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
+        },
+        {
+            "Title": "AngularJs",
+            "Level": "60",
+            "Img": "https://www.svgrepo.com/show/452156/angular.svg"
+        }
+    ]
+}
