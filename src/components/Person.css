@@ -1,0 +1,61 @@
+* {
+  --color-Lavanda-pálido: #1dece1;
+  --size-width-body:84vw;
+}
+
+.person {
+  display: flex;
+  justify-content: space-between; /*Que esten separados*/
+  align-items: center;
+  height: 88vh;
+  width: var(--size-width-body);
+  background: var(--color-Lavanda-pálido);
+}
+
+.person h1{
+  font-size: 3rem;
+}
+
+.person p{
+  font-size: 1.2rem;
+  max-width: 50rem;
+}
+
+.person img {
+  width: 20rem;
+  height: auto;
+  border: 0.5rem solid #000000;
+  border-radius: 50% ;
+  object-fit: cover;
+}
+.person section {
+  padding: 50px;
+}
+
+/* Estilos para pantallas con un ancho mayor a 780px */
+@media (min-width: 781px) {
+  #uno {
+    order: 1;
+  }
+
+  #dos {
+    order: 2;
+  }
+}
+
+/* Estilos para pantallas con un ancho menor a 390px */
+@media (max-width: 670px) {
+  .person {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+  }
+  #uno {
+    order: 2;
+  }
+
+  #dos {
+    order: 1;
+  }
+}

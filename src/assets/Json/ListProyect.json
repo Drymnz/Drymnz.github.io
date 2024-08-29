@@ -1,0 +1,25 @@
+{
+    "List": [
+        {
+            "Title": "GrammarGeomCalc",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
+            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
+            "UseTechnology": "Java",
+            "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
+        },
+        {
+            "Title": "GrammarGeomCalc01",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
+            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
+            "UseTechnology": "Java",
+            "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
+        },
+        {
+            "Title": "GrammarGeomCalc02",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
+            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
+            "UseTechnology": "Java",
+            "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
+        }
+    ]
+}

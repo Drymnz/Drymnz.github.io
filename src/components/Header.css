@@ -1,0 +1,62 @@
+* {
+  --color-background-header:#ffff;
+
+  --color-Rosa-pálido: #f2e1fc;
+  --color-one: #f29171;
+  --color-two: #3498db;
+  --color-opacity-one: rgba(75, 35, 107, 0.2);
+  --padding: 20px;
+}
+
+header {
+  /*TAMAÑO*/
+  width: 100%;
+  height: auto;
+  /*POSICION*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*interno*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-background-header);
+}
+
+header img {
+  position: relative;
+  max-width: 6vw;
+  height: auto;
+}
+
+.header-section-button {
+  position: relative;
+  right:7vw;
+}
+
+/* Para pantallas de tamaño mediano y grande (como computadoras) */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  header section img {
+    margin-right: 20px;
+  }
+
+}
+
+/* Para pantallas de tamaño pequeña y mediano (como celulares) */
+@media (max-width: 767px) {
+
+}
+/* Para pantallas de tamaño enana y pequeña (como celulares) */
+@media (max-width: 390px) {
+  header section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

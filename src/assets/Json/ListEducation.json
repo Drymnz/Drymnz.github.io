@@ -1,0 +1,28 @@
+{
+    "List": [
+        {
+            "Title": "Ingeniería en Ciencias y Sistemas.",
+            "Active": true,
+            "Year": "2019",
+            "Logo": "https://seeklogo.com/images/U/universidad-de-san-carlos-de-guatemala-logo-4B7C23A157-seeklogo.com.png"
+        },
+        {
+            "Title": "Profesorado en Enseñanza media en Matematica y Fisica.",
+            "Active": true,
+            "Year": "2018",
+            "Logo": "https://seeklogo.com/images/U/universidad-de-san-carlos-de-guatemala-logo-4B7C23A157-seeklogo.com.png"
+        },
+        {
+            "Title": "Reparador de Equipos Informáticos.",
+            "Active": false,
+            "Year": "2017",
+            "Logo": "https://universalmediagt.com/wp-content/uploads/2019/07/intecap.png"
+        },
+        {
+            "Title": "Bachiller en Ciencias y Letras con Orientación en Diseño Gráfico.",
+            "Active": false,
+            "Year": "2017",
+            "Logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJfXBJH2uq38T4CSQIxZJoksHSWCOfhy1Nw&s"
+        }
+    ]
+}
