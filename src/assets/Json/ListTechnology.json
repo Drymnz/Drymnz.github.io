@@ -2,13 +2,61 @@
     "Technology":[
         {
             "Title": "React",
-            "Level": "30",
+            "Level": "40",
             "Img": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
         },
         {
+            "Title": "Mysql",
+            "Level": "50",
+            "Img": "https://www.svgrepo.com/show/473731/mysql.svg"
+        }
+        ,
+        {
             "Title": "AngularJs",
-            "Level": "60",
+            "Level": "70",
             "Img": "https://www.svgrepo.com/show/452156/angular.svg"
+        }
+        ,
+        {
+            "Title": "Java",
+            "Level": "70",
+            "Img": "https://www.svgrepo.com/show/184143/java.svg"
+        }
+        ,
+        {
+            "Title": "Node js",
+            "Level": "20",
+            "Img": "https://www.svgrepo.com/show/376337/node-js.svg"
+        }
+        ,
+        {
+            "Title": "HTML",
+            "Level": "60",
+            "Img": "https://www.svgrepo.com/show/452228/html-5.svg"
+        }
+        ,
+        {
+            "Title": "CCS",
+            "Level": "40",
+            "Img": "https://www.svgrepo.com/show/452185/css-3.svg"
+        }
+        ,
+        {
+            "Title": "Java Script",
+            "Level": "50",
+            "Img": "https://www.svgrepo.com/show/94397/java-script-logo.svg"
+        }
+        ,
+        {
+            "Title": "Bash",
+            "Level": "60",
+            "Img": "https://www.svgrepo.com/show/353478/bash-icon.svg"
+        }
+        ,
+        {
+            "Title": "Git Hub",
+            "Level": "70",
+            "Img": "https://www.svgrepo.com/show/512317/github-142.svg"
         }
     ]
 }

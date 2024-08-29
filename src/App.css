@@ -1,4 +1,58 @@
-.app {
-    width: 100%;
-    background-color: #3C3F46;
+* {
+  --color-Rosa-pálido: #f2e1fc;
+  --color-Amarillo-vivo: #fbd309;
+  --color-Lavanda-pálido: #dcabf7;
+  --color-Lavanda-suave: #cd87f4;
+  --color-Violeta-pastel: #b368e3;
+  --color-Púrpura-claro: #bf63f1;
+  --color-Violeta-brillante: #b03fed;
+  --color-Violeta-intenso: #a11bea;
+  --color-Naranja-oscuro: #eaa11b;
+  --color-Gris-neutro: #808080;
+  --color-Gris-azulado: #3e5564;
+  --color-Azul-medio: #1d80d6;
+  --color-Cyan-brillante: #1dece1;
+  --color-Verde-menta: #1beaa1;
+  --color-Verde-lima: #24e963;
+  --color-Verde-oscuro: #286e2f;
+  --color-Cyan-intenso: #05a1c2;
+  --color-Marrón-claro: #cd9170;
+  --color-Marrón-rojizo: #743d28;
+  --color-Negro-oscuro: #1a1b1c;
+
+  font-family: system-ui, sans-serif;
+
+  font-weight: bold;
+  
+}
+button {
+  --c: #000000; /* the color*/
+  box-shadow: 0 0 0 0.1em inset var(--c);
+  --_g: linear-gradient(var(--c) 0 0) no-repeat;
+  background: var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+    var(--_g) calc(200% - var(--_p, 0%)) 0%,
+    var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+    var(--_g) calc(200% - var(--_p, 0%)) 100%;
+  background-size: 50.5% calc(var(--_p, 0%) / 2 + 0.5%);
+  outline-offset: 0.1em;
+  transition: background-size 0.4s, background-position 0s 0.4s;
+}
+button:hover {
+  /*lo cubre*/
+  --_p: 100%;
+  color: #fff;
+  transition: background-position 0.4s, background-size 0s;
+}
+button:active {
+  box-shadow: 0 0 9e9Q inset rgba(108, 105, 105, 0.6);
+  background-color: var(--c);
+  color: #fff;
+}
+
+button {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.1em 0.6em;
+  border: none;
+  margin: 0 10px 0 10px;
 }

@@ -1,0 +1,15 @@
+*{
+    --size-width-tecnology:150px;
+    --color-background-tecnologys: #eaa11b;
+}
+.tecnologys {
+  background: var(--color-background-tecnologys);
+  padding: 10px;
+  display: grid;
+  width: 83vw;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(var(--size-width-tecnology), 1fr)
+  );
+  gap: 32px;
+}

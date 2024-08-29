@@ -1,4 +1,7 @@
 * {
+  --color-background-header:#ffff;
+
+  --color-Rosa-pálido: #f2e1fc;
   --color-one: #f29171;
   --color-two: #3498db;
   --color-opacity-one: rgba(75, 35, 107, 0.2);
@@ -6,31 +9,29 @@
 }
 
 header {
+  /*TAMAÑO*/
+  width: 100%;
+  height: auto;
+  /*POSICION*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*interno*/
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
-  background: var(--color-one);
-  white-space: 80%;
+  background: var(--color-background-header);
 }
 
 header img {
-  max-width: 100px;
+  position: relative;
+  max-width: 6vw;
   height: auto;
 }
 
-header button {
-  padding: 10px;
-  margin: 5px 0;
-  max-width: 150px;
-
-  border: none;
-  padding: 14px 28px;
-  cursor: pointer;
-  border-radius: 5px;
-
-  background-color: var(--color-opacity-one); /* Semi-transparente negro */
-  opacity: 0.8; /* Opacidad adicional */
+.header-section-button {
+  position: relative;
+  right:7vw;
 }
 
 /* Para pantallas de tamaño mediano y grande (como computadoras) */
@@ -45,18 +46,11 @@ header button {
     margin-right: 20px;
   }
 
-  header button {
-    width: auto;
-    margin: 0 5px;
-    gap: 10px;
-  }
 }
 
 /* Para pantallas de tamaño pequeña y mediano (como celulares) */
 @media (max-width: 767px) {
-  header section button {
-    margin: 5px;
-  }
+
 }
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
 @media (max-width: 390px) {

@@ -1,25 +1,35 @@
 * {
-  --color-circle: #76aa76;
-  --color-background-person: #fa3e0a;
+  --color-Lavanda-pálido: #1dece1;
+  --size-width-body:84vw;
 }
+
 .person {
   display: flex;
   justify-content: space-between; /*Que esten separados*/
   align-items: center;
-  height: 73vh;
-  background: var(--color-background-person);
-  padding: 25px;
+  height: 88vh;
+  width: var(--size-width-body);
+  background: var(--color-Lavanda-pálido);
+}
+
+.person h1{
+  font-size: 3rem;
+}
+
+.person p{
+  font-size: 1.2rem;
+  max-width: 50rem;
 }
 
 .person img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 20rem;
+  height: auto;
+  border: 0.5rem solid #000000;
+  border-radius: 50% ;
   object-fit: cover;
-  border: 5px solid var(--color-circle);
 }
-#uno {
-    padding: 50px;
+.person section {
+  padding: 50px;
 }
 
 /* Estilos para pantallas con un ancho mayor a 780px */

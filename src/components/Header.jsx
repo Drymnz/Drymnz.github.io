@@ -1,19 +1,27 @@
 import "./Header.css"
 import IMG_LOGO from '../assets/Img/Logo.png'
 
-function Header() {
+// eslint-disable-next-line react/prop-types
+function Header( { scrollToHome,scrollToListProyect,scrollToListtechnology, scrollToEducation,scrollToFooter  }) {
+    const clickToHome = () =>{scrollToHome()}
+    const clickListProyect = () =>{scrollToListProyect()}
+    const clickListtechnology = () =>{scrollToListtechnology()}
+    const clickEducation = () =>{scrollToEducation()}
+    const clickFooter = () =>{scrollToFooter()}
     return (
         <>
             <header>
                 <section>
                     <img src={IMG_LOGO} alt="Logo representativo de mi persona" />
                 </section>
-                <section>
-                    <button>Inicio</button>
-                    <button>Proyectos</button>
-                    <button>Tecnologias</button>
-                    <button>Eduacion</button>
-                    <button>Contacto</button>
+                <section className="header-section-button">
+                    <nav>
+                        <button onClick={clickToHome} >Inicio</button>
+                        <button onClick={clickListProyect} >Proyectos</button>
+                        <button onClick={clickListtechnology}>Tecnologias</button>
+                        <button onClick={clickEducation}>Eduacion</button>
+                        <button onClick={clickFooter}>Contacto</button>
+                    </nav>
                 </section>
             </header>
         </>

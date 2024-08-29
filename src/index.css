@@ -1,13 +1,31 @@
-/*91aaea
-c07be5
-ffdbba
-f29171
-*/
+* {
+  /*COLOR*/
+  --color-Rosa-pálido: #f2e1fc;
+  
+  --color-background-html:#000000;
+  --color-background-body:#fff;
+  /*SIZE*/
+  --size-width-desk: 85vw;
+  --size-width-android: 90%;
+  --size-width-iphone: 98vw;
+}
+html {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--color-background-html);
+}
 body {
-    background: #3C3F46;
+  width: var(--size-width-desk);
+  background: var(--color-background-body);
 }
-
-footer {
-    background: #585858;
+#root {
+  padding: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
