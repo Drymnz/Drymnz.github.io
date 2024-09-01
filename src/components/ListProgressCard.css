@@ -41,6 +41,7 @@
 .education img {
   max-width: 150px;
   height: auto;
+  object-fit: cover;
 }
 
 .education svg {

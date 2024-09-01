@@ -3,23 +3,32 @@
         {
             "Title": "GrammarGeomCalc",
             "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
-            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
+            "Description": "Con este proyecto universitario, aprendí el desarrollo de una aplicación utilizando Java Swing. Para su implementación, empleé dos herramientas: JFlex y CUP, las cuales se utilizaron para la interpretación del análisis léxico y sintáctico, respectivamente.",
             "UseTechnology": "Java",
             "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
         },
         {
-            "Title": "GrammarGeomCalc01",
-            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
-            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
-            "UseTechnology": "Java",
-            "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
+            "Title": "My-setting-awesome-wm",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/My-setting-awesome-wm/main/recursos-git/00_1366x768_scrot.png",
+            "Description": "Es un proyecto personal que comencé para aprender Linux. Consistió en la instalación de Arch Linux utilizando únicamente comandos, seguida de la configuración de un escritorio personalizado con gestor de ventanas en mosaico (tiling window manager).",
+            "UseTechnology": "Bash",
+            "Link": "https://github.com/Drymnz/My-setting-awesome-wm/tree/main"
         },
         {
-            "Title": "GrammarGeomCalc02",
-            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
-            "Description": "Es una aplicación gráficas personalizadas con nuestro framework basado en Java Swing. La herramienta te permite definir un figuras geometricas básica mediante el lenguaje formal ya programado.",
-            "UseTechnology": "Java",
-            "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
+            "Title": "Mini-SQL-Practica",
+            "UrlImg": "",
+            "Description": "Esta aplicación en Angular implementa un analizador léxico, sintáctico y semántico para SQL. Interpreta la estructura de SQL y ejecuta algunas funcionalidades, utilizando Angular para una interfaz de usuario dinámica y eficiente.",
+            "UseTechnology": "Angular",
+            "Link": "https://github.com/Drymnz/Mini-SQL-Practica"
         }
+        ,
+        {
+            "Title": "Proyecto-Boxworld-Sokoban-Compiladores",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/Proyecto-Boxworld-Sokoban-Compiladores/main/recursos-git/imagen_tres.jpg",
+            "Description": "Aplicación Android desarrollada como proyecto universitario para análisis sintáctico. Implementa generación dinámica de mapas mediante interacción con socket Java. El dispositivo móvil envía instrucciones de mapeo, y el socket responde con indicaciones para construir el mapa en la aplicación.",
+            "UseTechnology": "Kotlin y Java\"Socket\"",
+            "Link": "https://github.com/Drymnz/Proyecto-Boxworld-Sokoban-Compiladores"
+        }
+        
     ]
 }
