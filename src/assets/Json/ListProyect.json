@@ -1,9 +1,16 @@
 {
     "List": [
         {
+            "Title": "WebXsonQuiz",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/WebXsonQuiz/refs/heads/main/recursos-git/img_001.png",
+            "Description": "Su función principal es la creación de trivias consumidas por una aplicación Android en código Kotlin, utilizando comunicación a través de sockets. Además, cuenta con una parte web encargada de crear, modificar y eliminar trivias y sus componentes, así como de realizar lecturas en SQLKV, un lenguaje creado específicamente para el proyecto.",
+            "UseTechnology": "Kotlin y Java\"Socket\"",
+            "Link": "https://github.com/Drymnz/WebXsonQuiz"
+        },
+        {
             "Title": "GrammarGeomCalc",
             "UrlImg": "https://raw.githubusercontent.com/Drymnz/Practica-Compi-1-Graficador-2024-S2/main/recursos-git/Screenshot_Proyect.png",
-            "Description": "Con este proyecto universitario, aprendí el desarrollo de una aplicación utilizando Java Swing. Para su implementación, empleé dos herramientas: JFlex y CUP, las cuales se utilizaron para la interpretación del análisis léxico y sintáctico, respectivamente.",
+            "Description": "Con este proyecto, aprendí el desarrollo de una aplicación utilizando Java Swing. Para su implementación, empleé dos herramientas: JFlex y CUP, las cuales se utilizaron para la interpretación del análisis léxico y sintáctico, respectivamente.",
             "UseTechnology": "Java",
             "Link": "https://github.com/Drymnz/Practica-Compi-1-Graficador-2024-S2"
         },

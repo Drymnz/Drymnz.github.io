@@ -65,3 +65,19 @@ li img {
   font-size: 2.4vh;
   margin: 0;
 }
+#nav-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#nav-footer button{
+  list-style: none;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+#nav-footer button:hover{
+  color: #db2525;
+}
+

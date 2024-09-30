@@ -57,7 +57,10 @@ function App() {
       <ListProgressCard refDiv={section4Ref} list={listOne} />
       <h2>Diplomas</h2>
       <ListProgressCard  list={listTwo} />
-      <Footer refDiv={section5Ref} />
+      <Footer refDiv={section5Ref}
+      scrollToHome={scrollToHome} scrollToListProyect={scrollToListProyect} scrollToListtechnology={scrollToListtechnology} 
+      scrollToFooter={scrollToFooter} scrollToEducation={scrollToEducation}
+       />
     </>
   )
 }

@@ -3,7 +3,13 @@ import IMG_LOGO from '../assets/Img/Logo.png'
 
 
 // eslint-disable-next-line react/prop-types
-function Footer({refDiv}) {
+function Footer({refDiv, scrollToHome,scrollToListProyect,scrollToListtechnology, scrollToEducation,scrollToFooter }) {
+
+  const clickToHome = () =>{scrollToHome()}
+  const clickListProyect = () =>{scrollToListProyect()}
+  const clickListtechnology = () =>{scrollToListtechnology()}
+  const clickEducation = () =>{scrollToEducation()}
+
   const CELL_SVG = "https://www.svgrepo.com/show/511583/call-192.svg"
   const GMAIL_SVG = "https://www.svgrepo.com/show/473621/gmail.svg"
   const ADDRESS_SVG = "https://www.svgrepo.com/show/430111/address-pin-location.svg"
@@ -16,16 +22,14 @@ function Footer({refDiv}) {
     <div ref={refDiv}></div>
       <footer>
         <section>
-          <div id='nav-footer'>
-            <h4>Enlaces a otras secciones del sitio</h4>
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Proyetos</a></li>
-              <li><a href="#">Tecnologias</a></li>
-              <li><a href="#">Educacion</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-          </div>
+        <div id='nav-footer'>
+    <h4>Enlaces a otras secciones del sitio</h4>
+        <button onClick={clickToHome} >Inicio</button>
+        <button onClick={clickListProyect} >Proyectos</button>
+        <button onClick={clickListtechnology} >Tecnologías</button>
+        <button onClick={clickEducation} >Educación</button>
+    </div>
+
           <div id='logo-footer'>
             <img src={IMG_LOGO} alt="Logo representativo de mi persona" />
           </div>
