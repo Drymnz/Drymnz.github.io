@@ -1,50 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
 
-* {
+:root {
   --size-width-education: 300px;
   --color-background-list-education: #01a3a3;
   --color-background-education: #fff;
+  --box-shadow: 0px 0px 31px 6px rgba(0, 0, 0, 0.75);
 }
+
 .list_education {
   background: var(--color-background-list-education);
   padding: 10px;
   display: grid;
   width: 83vw;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(var(--size-width-education), 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(var(--size-width-education), 1fr));
   gap: 32px;
 }
 
 .education {
   max-width: var(--size-width-education);
-
   background: var(--color-background-education);
-  padding: 1vh 5px 3vh 5px;
+  padding: 1vh 5px 3vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 31px 6px rgba(0,0,0,0.75);
+  box-shadow: var(--box-shadow); /* Utiliza variable para sombra */
 }
 
 .education h2 {
-  margin: 0;
-  margin-bottom: 10px;
-
+  margin: 0 0 10px; /* Agrupa márgenes */
   text-align: center;
   font-family: 'UnifrakturCook', serif;
 }
 
-.education img {
-  max-width: 150px;
-  height: auto;
-  object-fit: cover;
-}
-
-.education svg {
+.education img, .education svg {
   max-width: 150px;
   height: auto;
 }

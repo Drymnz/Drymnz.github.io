@@ -1,69 +1,75 @@
-*{
-    --color--progress-progress-card:#111;
-    --color--progress-background-progress-card:#CCCCCC;
+:root {
+  --background-light: #efefef;
+  --border-color: #c71515;
+  --background-skill-container: #eaa11b;
+  --skill-bar-background: #c71515;
 }
 
-
-.element {
-    top: 2vh;
-    max-width: 150px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    background: #01a3a3;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  background: var(--background-light);
+  padding: 1em;
+  max-width: 150px;
+  min-width: 50px;
+  border-radius: 10px;
+  border: solid 5px var(--border-color);
 }
 
-.element:hover,
-.content:hover {
-    background: #08bfbf;
+.bar{
+  width: 100px;
 }
 
-.box {
-    margin: 1vh;
-    width: 105px;
-    height: 105px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skillBar {
+  margin-bottom: 1.66em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.box .percent {
-    top: 0;
-    left: 0;
+.skillBar h4 {
+  font-size: 21px;
+  font-size: 1.33em;
+  text-transform: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 7px;
+  margin-bottom: 0.33em;
+}
+
+.skillBar img {
+  width: 50px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.skillBarContainer {
+  width: auto;
+  height: 26px;
+  height: 1.66em;
+  background: var(--background-skill-container);
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.skillBarValue {
+  height: 1.66em;
+  float: left;
+  background: var(--skill-bar-background);
+  -webkit-animation: slideIn 2s;
+  -moz-animation: slideIn 2s;
+  -o-animation: slideIn 2s;
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+  25% {
     width: 100%;
-    height: 100%;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.box .percent svg circle {
-    width: 150px;
-    height: 150px;
-    fill: none;
-    stroke-width: 10;
-    stroke: #000;
-    transform: translate(5px, 5px);
-    stroke-dashoffset: 290;
-    stroke-dasharray: 290;
-}
-
-.box .percent svg circle:nth-child(1) {
-    stroke-dashoffset: 0;
-    stroke: var(--color--progress-background-progress-card);
-}
-
-.box .percent .number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.number img {
-    position: relative;
-    top: -125px;
-    left: -0.2vw;
-    width: 8vh;
+  }
+  100% {
+    width: normal;
+  }
 }
