@@ -19,7 +19,11 @@
 @media (max-width: 1090px) {
   .tecnologys {
     padding: 0;
-    width: 81vw;
+    width: 100vw;
     gap: 0;
+    grid-template-columns: repeat(
+    auto-fit,
+    minmax(35vw, 1fr)
+  );
   }
 }

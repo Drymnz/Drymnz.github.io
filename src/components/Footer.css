@@ -84,7 +84,8 @@ li img {
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
 @media (max-width: 1090px) {
   footer {
-    width: 78vw;
+    margin-top: 5vw;
+    width: 95vw;
   }
 
   footer section {
@@ -122,17 +123,17 @@ li img {
 
   #nav-footer button {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 1em;
   }
 
   footer section h4,
   #nav-footer h4 {
     text-align: left;
-    margin-left: 1em;
+    margin-left: 4em;
   }
 
   #nav-footer h4{
     width: 100%;
-    margin-left: 2em;
+    margin-left: 8em;
   }
 }
