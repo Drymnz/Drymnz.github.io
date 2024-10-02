@@ -3,11 +3,10 @@ import Education from "./Education"
 import './ListProgressCard.css'
 
 // eslint-disable-next-line react/prop-types
-function ListProgressCard({list:list, refDiv}) {
+function ListProgressCard({list:list}) {
     //const list = LIST_EDUCATION.List
     return (
         <>
-        <div ref={refDiv}></div>
             <div  className="list_education">
                 {list.map((educ) => (
                     <Education key={educ.Title} title={educ.Title} active={educ.Active} urlImg={educ.Logo} />

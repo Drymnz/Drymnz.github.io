@@ -8,11 +8,11 @@ function Person({refDiv}) {
   return (
     <>
       <div ref={refDiv} className="person">
-        <section id="uno">
+        <section id="info">
           <h1>{Persona.Nombre}</h1>
           <p>{Persona.Resumen}</p>
         </section>
-        <section id="dos">
+        <section id="photo">
           <img src={FOTO} alt="Imagen de la persona" />
         </section>
       </div>

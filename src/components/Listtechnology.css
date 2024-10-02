@@ -13,3 +13,13 @@
   );
   gap: 32px;
 }
+
+
+/* Para pantallas de tamaño enana y pequeña (como celulares) */
+@media (max-width: 1090px) {
+  .tecnologys {
+    padding: 0;
+    width: 81vw;
+    gap: 0;
+  }
+}

@@ -8,7 +8,7 @@
 
 footer {
   width: 100%;
-  margin-top: 0.4vw;
+  margin-top: 1vh;
   background-color: var(--color-background-footer-section);
   color: var(--color-text-footer);
   font-size: 12px;
@@ -50,7 +50,7 @@ footer section div {
   align-items: center;
 }
 
-#logo-footer img, 
+#logo-footer img,
 li img {
   width: 150px;
   filter: var(--color-filter-invert);
@@ -71,13 +71,68 @@ li img {
   align-items: flex-start;
 }
 
-#nav-footer button{
+#nav-footer button {
   list-style: none;
   margin-bottom: 5px;
   color: #fff;
 }
 
-#nav-footer button:hover{
+#nav-footer button:hover {
   color: #db2525;
 }
 
+/* Para pantallas de tamaño enana y pequeña (como celulares) */
+@media (max-width: 1090px) {
+  footer {
+    width: 78vw;
+  }
+
+  footer section {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  #contact-footer {
+    text-align: center;
+  }
+
+  #contact-footer li {
+    width: 100%;
+    display: inline-block;
+  }
+
+  #logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li img {
+    width: 20px;
+    margin-right: 10px;
+  }
+
+  #nav-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  #nav-footer button {
+    list-style: none;
+    margin-bottom: 5px;
+  }
+
+  footer section h4,
+  #nav-footer h4 {
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  #nav-footer h4{
+    width: 100%;
+    margin-left: 2em;
+  }
+}

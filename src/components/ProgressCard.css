@@ -73,3 +73,10 @@
     width: normal;
   }
 }
+/* Para pantallas de tamaño enana y pequeña (como celulares) */
+@media (max-width: 1090px) {
+  .contentContainer{
+    width: 22vw;
+    margin: 1em;
+  }
+}

@@ -1,36 +1,29 @@
 * {
   --color-background-proyect: #eaa11b;
   --color-background-proyects: #1dece1;
-
-  --size-width-proyects: 83vw;
-
   /*Tamaño*/
   --size-width-proyect: 400px;
 }
 .proyects {
   background: var(--color-background-proyects);
-  padding: 10px;
   display: grid;
-  width: var(--size-width-proyects);
+  width: 84vw;
   grid-template-columns: repeat(
     auto-fit,
     minmax(var(--size-width-proyect), 1fr)
   );
-  gap: 32px;
+  gap: 2em;
 }
 
 .proyect {
+  margin: 1em;
   height: 450px;
-  width: auto;
-  min-width: var(--size-width-proyect);
 
   background: var(--color-background-proyect);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: space-evenly;
   padding: 15px;
-  justify-content: space-evenly;
 
   -webkit-box-shadow: 0px 0px 41px -11px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 41px -11px rgba(0, 0, 0, 0.75);
@@ -40,4 +33,46 @@
 .proyect img {
   width: 350px;
   height: 200px;
+}
+/* Para pantallas de tamaño enana y pequeña (como celulares) */
+@media (max-width: 1090px) {
+  .proyects {
+    width: 81vw;
+    max-width: 82vw;
+    padding-bottom: 0;
+    gap: 2em;
+  }
+
+  .proyect {
+    margin: 0;
+    margin-top: 1em;
+    height: 62vh;
+    max-width: 81vw;
+
+    display: flex;
+    padding: 0;
+  }
+
+  .proyect img {
+    width: 20em;
+  }
+
+  .proyect h2 {
+    margin: 0;
+    margin-top: 0.1em;
+    margin-bottom: 0.3em;
+  }
+
+  .proyect p {
+    width: 85%;
+  }
+
+  .proyect div {
+    margin-bottom: 1em;
+  }
+
+  .proyect a {
+    width: 15em;
+    margin-bottom: 1em;
+  }
 }

@@ -19,11 +19,8 @@
   --color-Marrón-claro: #cd9170;
   --color-Marrón-rojizo: #743d28;
   --color-Negro-oscuro: #1a1b1c;
-
   font-family: system-ui, sans-serif;
-
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 button {
   --c: #000000; /* the color*/

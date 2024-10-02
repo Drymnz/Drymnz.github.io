@@ -8,8 +8,8 @@ export function Listtechnology({refDiv}) {
     const listTecnology = LIST_TECNOLOGY.Technology
     return (
         <>
-            <h2>Tecnologia</h2>
-            <div ref={refDiv} className="tecnologys">
+            <h2 ref={refDiv} >Tecnologia</h2>
+            <div className="tecnologys">
                 {listTecnology.map((tec, index) => (
                     <ProgressCard key={`${tec.Title}-${index}`} title={tec.Title} img={tec.Img} percentage={tec.Level} />
                 ))}
