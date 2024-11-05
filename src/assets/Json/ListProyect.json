@@ -2,7 +2,7 @@
     "List": [
         {
             "Title": "CaptchaForge",
-            "UrlImg": "https://raw.githubusercontent.com/Drymnz/WebXsonQuiz/refs/heads/main/recursos-git/img_001.png",
+            "UrlImg": "https://raw.githubusercontent.com/Drymnz/CaptchaForge/refs/heads/dev-app/Recursos/2024-10-28-001654_1366x741_scrot.png",
             "Description": "Este proyecto fue desarrollado para interpretar un lenguaje de CC, que incluye etiquetas para convertir a HTML y JS. Además, cuenta con su propio lenguaje de scripting para el uso en la página web. Utiliza Angular 18 para realizar peticiones a una API de Spring Boot.",
             "UseTechnology": "Angular 18 y Spring Boot",
             "Link": "https://github.com/Drymnz/CaptchaForge"
