@@ -137,3 +137,8 @@ li img {
     margin-left: 8em;
   }
 }
+
+.element-footer-contact img{
+  height: 1.5em;
+  width: auto;
+}

@@ -1,5 +1,7 @@
 import "./Footer.css";
 import IMG_LOGO from "../assets/Img/Logo.png";
+import IMG_NUMBER from "../assets/Img/NumeberPhone.png";
+import IMG_EMAIL from "../assets/Img/Email.png";
 
 // eslint-disable-next-line react/prop-types
 function Footer({
@@ -7,8 +9,7 @@ function Footer({
   scrollToHome,
   scrollToListProyect,
   scrollToListtechnology,
-  scrollToEducation,
-  scrollToFooter,
+  scrollToEducation
 }) {
   const clickToHome = () => {
     scrollToHome();
@@ -28,8 +29,6 @@ function Footer({
   const ADDRESS_SVG =
     "https://www.svgrepo.com/show/430111/address-pin-location.svg";
 
-  const main = "bj97perezaguilar@gmail.com";
-  const celular = "+502 4679 2122";
   const direccion = "Guatemala Quetzaltenango, Quetzaltenango";
   return (
     <>
@@ -54,11 +53,16 @@ function Footer({
                 {direccion}
               </li>
               <li>
-                <img src={CELL_SVG} alt="SVG call" />
-                {celular}
+                <div className="element-footer-contact">
+                  <img src={CELL_SVG} alt="SVG call" />
+                  <img src={IMG_NUMBER} alt="Numbeber" />
+                </div>
               </li>
               <li>
-                <img src={GMAIL_SVG} alt="SVG GMAIL" /> {main}
+                <div className="element-footer-contact">
+                  <img src={GMAIL_SVG} alt="SVG GMAIL" /> 
+                  <img src={IMG_EMAIL} alt="Emai" />
+                </div>
               </li>
             </ul>
           </div>
