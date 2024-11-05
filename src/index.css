@@ -3,7 +3,13 @@
   --color-Rosa-pálido: #f2e1fc;
   --color-background-html:#000000;
   --color-background-body:#fff;
+  box-sizing: border-box;
 }
+
+body, html {
+    overflow-x: hidden;
+  }
+  
 
 html {
   padding: 0;
