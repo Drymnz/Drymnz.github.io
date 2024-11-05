@@ -16,7 +16,7 @@ function Header( { scrollToHome,scrollToListProyect,scrollToListtechnology, scro
                 </section>
                 <section className="header-section-button">
                     <nav>
-                        <button onClick={clickToHome} >Inicio</button>
+                        <button onClick={clickToHome} >Descripción</button>
                         <button onClick={clickListProyect} >Proyectos</button>
                         <button onClick={clickListtechnology}>Tecnologias</button>
                         <button onClick={clickEducation}>Eduacion</button>

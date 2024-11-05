@@ -7,7 +7,7 @@
 .proyects {
   background: var(--color-background-proyects);
   display: grid;
-  width: 84vw;
+  width: var(--width-componet);
   grid-template-columns: repeat(
     auto-fit,
     minmax(var(--size-width-proyect), 1fr)
@@ -17,7 +17,7 @@
 
 .proyect {
   margin: 1em;
-  height: 450px;
+  height: auto;
 
   background: var(--color-background-proyect);
   display: flex;
@@ -50,9 +50,8 @@
   .proyect {
     margin: 0;
     margin-top: 1em;
-    height: 62vh;
+    height: auto;
     max-width: 81vw;
-
     display: flex;
     padding: 0;
   }

@@ -7,7 +7,7 @@ function ListProyects({ refDiv }) {
   const listProyects = LIST_PROYECT.List;
   return (
     <>
-      <h2 ref={refDiv}>Proyectos</h2>
+    <h2 ref={refDiv}>Proyectos</h2>
       <div className="proyects">
         {listProyects.map((proyect, index) => (
           <Proyect

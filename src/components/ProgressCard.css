@@ -76,7 +76,7 @@
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
 @media (max-width: 1090px) {
   .contentContainer{
-    width: 22vw;
+    width: 10em;
     margin: 1em;
   }
 }

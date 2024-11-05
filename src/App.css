@@ -21,6 +21,7 @@
   --color-Negro-oscuro: #1a1b1c;
   font-family: system-ui, sans-serif;
   font-weight: bold;  
+  --width-componet: 84vw;
 }
 button {
   --c: #000000; /* the color*/

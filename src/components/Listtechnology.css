@@ -6,7 +6,7 @@
   background: var(--color-background-tecnologys);
   padding: 10px;
   display: grid;
-  width: 83vw;
+  width: var(--width-componet);
   grid-template-columns: repeat(
     auto-fit,
     minmax(var(--size-width-tecnology), 1fr)

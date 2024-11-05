@@ -1,19 +1,22 @@
 :root {
   --color-lavanda-pálido: #1dece1; /* Corregido a minúsculas para consistencia */
-  --size-width-body: 84vw;
 }
 
 .person {
   display: flex;
   justify-content: space-between; /* Que estén separados */
   align-items: center;
-  height: 99vh;
-  width: var(--size-width-body);
+  height: 100vh;
+  width: var(--width-componet);
   background: var(--color-lavanda-pálido);
 }
 
 .person h1 {
   font-size: 3rem;
+}
+
+.person p, .person h1{
+  margin-left: 1em;
 }
 
 .person p {
@@ -23,6 +26,7 @@
 
 .person img {
   width: 20rem;
+  margin-right: 1em;
   height: auto;
   border: 0.5rem solid #000;
   border-radius: 50%;
