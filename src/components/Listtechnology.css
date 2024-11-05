@@ -7,6 +7,7 @@
   padding: 10px;
   display: grid;
   width: var(--width-componet);
+  justify-items: start;
   grid-template-columns: repeat(
     auto-fit,
     minmax(var(--size-width-tecnology), 1fr)

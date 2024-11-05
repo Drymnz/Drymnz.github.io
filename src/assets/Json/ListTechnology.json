@@ -1,6 +1,11 @@
 {
     "Technology":[
         {
+            "Title": "Spring Boot",
+            "Level": "60",
+            "Img": "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg"
+        },
+        {
             "Title": "React",
             "Level": "40",
             "Img": "https://www.svgrepo.com/show/493719/react-javascript-js-framework-facebook.svg"
