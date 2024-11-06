@@ -14,9 +14,11 @@ footer {
   font-size: 12px;
 }
 
-footer li {
+footer li,
+#nav-footer button {
   list-style: none;
   margin-bottom: 5px;
+  color: var(--color-text-footer);
 }
 
 footer a {
@@ -50,80 +52,80 @@ footer section div {
   align-items: center;
 }
 
-#logo-footer img,
-li img {
-  width: 150px;
+li img,
+#logo-footer img {
+  width: 20px;
   filter: var(--color-filter-invert);
 }
 
-li img {
-  width: 20px;
-  margin-right: 10px;
+#logo-footer img {
+  margin: 1.5em 0 1em 0;
+  width: 175px;
 }
 
-.copyright h4 {
-  font-size: 2.4vh;
-  margin: 0;
+footer h4 {
+  margin: 0.5em 0 1em 0;
+  font-size: 1.25em;
 }
+
 #nav-footer {
+  margin-top: 0.5em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-#nav-footer button {
-  list-style: none;
-  margin-bottom: 5px;
-  color: #fff;
 }
 
 #nav-footer button:hover {
   color: #db2525;
 }
 
+.element-footer-contact img {
+  margin-left: 0.8em;
+  height: 1.5em;
+  width: auto;
+}
+
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
 @media (max-width: 1090px) {
   footer {
+    padding: 3em 0 1em 0;
     margin-top: 5vw;
     width: 95vw;
   }
 
   footer section {
-    display: flex;
-    width: 100%;
     flex-direction: column-reverse;
     align-items: center;
   }
 
   #contact-footer {
-    text-align: center;
+    text-align: left;
   }
 
   #contact-footer li {
-    width: 100%;
-    display: inline-block;
+    align-items: flex-end;
+    margin: 0.5em 0 1.5em 0;
   }
 
-  #logo-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #nav-footer h4 {
+    margin-bottom: 1.6em;
+  }
+
+  #logo-footer img {
+    margin: 3em 0 4em 0;
   }
 
   li img {
-    width: 20px;
     margin-right: 10px;
   }
 
   #nav-footer {
     width: 100%;
-    display: flex;
     align-items: center;
   }
 
   #nav-footer button {
-    list-style: none;
-    margin-bottom: 1em;
+    margin-bottom: 1.1em;
   }
 
   footer section h4,
@@ -132,13 +134,13 @@ li img {
     margin-left: 4em;
   }
 
-  #nav-footer h4{
+  #nav-footer h4 {
     width: 100%;
     margin-left: 8em;
   }
-}
 
-.element-footer-contact img{
-  height: 1.5em;
-  width: auto;
+  footer section ul,
+  #contact-footer ul {
+    margin-top: 4em;
+  }
 }

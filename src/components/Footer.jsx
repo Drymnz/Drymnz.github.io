@@ -36,8 +36,8 @@ function Footer({
       <footer>
         <section>
           <div id="nav-footer">
-            <h4>Enlaces a otras secciones del sitio</h4>
-            <button onClick={clickToHome}>Inicio</button>
+            <h4>Enlaces a secciones del sitio</h4>
+            <button onClick={clickToHome}>Descripcioón</button>
             <button onClick={clickListProyect}>Proyectos</button>
             <button onClick={clickListtechnology}>Tecnologías</button>
             <button onClick={clickEducation}>Educación</button>
@@ -50,7 +50,7 @@ function Footer({
             <ul>
               <li>
                 <img src={ADDRESS_SVG} alt="SVG ADDRESS" />
-                {direccion}
+                <p>{direccion}</p>
               </li>
               <li>
                 <div className="element-footer-contact">

@@ -29,7 +29,6 @@ header {
 
   header img {
     max-width: 6vw;
-    height: auto;
   }
 
   .header-section-button {
@@ -40,31 +39,25 @@ header {
 
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
 @media (max-width: 1090px) {
-
   header {
     width: 100%;
     height: 100vh;
     position: relative;
-    top: 0;
-    padding: 0;
   }
 
   header img {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin: 2em 0 3em 0;
     max-width: 70vw;
-    height: auto;
   }
 
   nav {
     display: flex;
     flex-direction: column;
   }
-  
+
   nav button {
     width: 70vw;
     height: 6vh;
     margin-bottom: 1.5em;
   }
-
 }

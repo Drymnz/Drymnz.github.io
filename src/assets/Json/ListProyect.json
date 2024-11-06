@@ -27,13 +27,6 @@
             "Description": "Es un proyecto personal que comencé para aprender Linux. Consistió en la instalación de Arch Linux utilizando únicamente comandos, seguida de la configuración de un escritorio personalizado con gestor de ventanas en mosaico (tiling window manager).",
             "UseTechnology": "Bash",
             "Link": "https://github.com/Drymnz/My-setting-awesome-wm/tree/main"
-        },
-        {
-            "Title": "Mini-SQL-Practica",
-            "UrlImg": "",
-            "Description": "Esta aplicación en Angular implementa un analizador léxico, sintáctico y semántico para SQL. Interpreta la estructura de SQL y ejecuta algunas funcionalidades, utilizando Angular para una interfaz de usuario dinámica y eficiente.",
-            "UseTechnology": "Angular",
-            "Link": "https://github.com/Drymnz/Mini-SQL-Practica"
         }
         ,
         {
