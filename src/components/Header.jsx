@@ -20,7 +20,7 @@ function Header( { scrollToHome,scrollToListProyect,scrollToListtechnology, scro
                         <button onClick={clickToHome} >Descripción</button>
                         <button onClick={clickListProyect} >Proyectos</button>
                         <button onClick={clickListtechnology}>Tecnologias</button>
-                        <button onClick={clickEducation}>Eduacion</button>
+                        <button onClick={clickEducation}>Eduación</button>
                         <button onClick={clickFooter}>Contacto</button>
                     </nav>
                 </section>

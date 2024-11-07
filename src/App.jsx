@@ -53,7 +53,7 @@ function App() {
       <Person refDiv={section1Ref} />
       <ListProyects refDiv={section2Ref} />
       <Listtechnology refDiv={section3Ref} />
-      <h2 ref={section4Ref} >Titulos</h2>
+      <h2 ref={section4Ref} >Títulos</h2>
       <ListProgressCard  list={listOne} />
       <h2>Diplomas</h2>
       <ListProgressCard  list={listTwo} />
