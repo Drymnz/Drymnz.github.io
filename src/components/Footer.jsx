@@ -37,7 +37,7 @@ function Footer({
         <section>
           <div id="nav-footer">
             <h4>Enlaces a secciones del sitio</h4>
-            <button onClick={clickToHome}>Descripcioón</button>
+            <button onClick={clickToHome}>Descripción</button>
             <button onClick={clickListProyect}>Proyectos</button>
             <button onClick={clickListtechnology}>Tecnologías</button>
             <button onClick={clickEducation}>Educación</button>
