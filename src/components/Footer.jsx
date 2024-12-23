@@ -55,13 +55,13 @@ function Footer({
               <li>
                 <div className="element-footer-contact">
                   <img src={CELL_SVG} alt="SVG call" />
-                  <img src={IMG_NUMBER} alt="Numbeber" />
+                  <img src={IMG_NUMBER} alt="Numbeber" className="number_iphone" />
                 </div>
               </li>
               <li>
                 <div className="element-footer-contact">
                   <img src={GMAIL_SVG} alt="SVG GMAIL" /> 
-                  <img src={IMG_EMAIL} alt="Emai" />
+                  <img src={IMG_EMAIL} alt="Emai"  />
                 </div>
               </li>
             </ul>

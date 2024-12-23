@@ -81,8 +81,14 @@ footer h4 {
 
 .element-footer-contact img {
   margin-left: 0.8em;
+  margin-bottom: 0.2em;
   height: 1.5em;
   width: auto;
+}
+
+.element-footer-contact .number_iphone{
+  width: auto;
+  height: 2.3em;
 }
 
 /* Para pantallas de tamaño enana y pequeña (como celulares) */
