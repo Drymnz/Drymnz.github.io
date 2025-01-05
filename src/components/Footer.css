@@ -2,8 +2,13 @@
   --color-background-footer: rgb(133, 196, 212);
   --color-background-footer-section: black;
   --color-text-footer: #fff;
+  --color-hover-footer: #db2525;
   --color-filter-invert: invert(100%);
   --size-width-element-footer: 250px;
+  --font-size-footer: 12px;
+  --spacing-small: 5px;
+  --spacing-medium: 1em;
+  --spacing-large: 1.5em;
 }
 
 footer {
@@ -11,13 +16,18 @@ footer {
   margin-top: 1vh;
   background-color: var(--color-background-footer-section);
   color: var(--color-text-footer);
-  font-size: 12px;
+  font-size: var(--font-size-footer);
+}
+
+footer h4 {
+  margin: var(--spacing-small) 0 var(--spacing-large) 0;
+  font-size: 1.25em;
 }
 
 footer li,
 #nav-footer button {
   list-style: none;
-  margin-bottom: 5px;
+  margin-bottom: var(--spacing-small);
   color: var(--color-text-footer);
 }
 
@@ -36,14 +46,14 @@ footer section div {
 
 #contact-footer {
   text-align: right;
-  padding-right: 0.25vw;
+  padding-right: 0.5em;
 }
 
 #contact-footer li {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 10px;
+  padding-right: 0.5em;
 }
 
 #logo-footer {
@@ -59,24 +69,19 @@ li img,
 }
 
 #logo-footer img {
-  margin: 1.5em 0 1em 0;
+  margin: var(--spacing-large) 0;
   width: 175px;
 }
 
-footer h4 {
-  margin: 0.5em 0 1em 0;
-  font-size: 1.25em;
-}
-
 #nav-footer {
-  margin-top: 0.5em;
+  margin-top: var(--spacing-small);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 #nav-footer button:hover {
-  color: #db2525;
+  color: var(--color-hover-footer);
 }
 
 .element-footer-contact img {
@@ -86,15 +91,15 @@ footer h4 {
   width: auto;
 }
 
-.element-footer-contact .number_iphone{
+.element-footer-contact .number_iphone {
   width: auto;
   height: 2.3em;
 }
 
-/* Para pantallas de tamaño enana y pequeña (como celulares) */
+/* Pantallas pequeñas */
 @media (max-width: 1090px) {
   footer {
-    padding: 3em 0 1em 0;
+    padding: var(--spacing-large) 0 var(--spacing-medium) 0;
     margin-top: 5vw;
     width: 95vw;
   }
@@ -110,19 +115,7 @@ footer h4 {
 
   #contact-footer li {
     align-items: flex-end;
-    margin: 0.5em 0 1.5em 0;
-  }
-
-  #nav-footer h4 {
-    margin-bottom: 1.6em;
-  }
-
-  #logo-footer img {
-    margin: 3em 0 4em 0;
-  }
-
-  li img {
-    margin-right: 10px;
+    margin: var(--spacing-medium) 0;
   }
 
   #nav-footer {
@@ -134,19 +127,8 @@ footer h4 {
     margin-bottom: 1.1em;
   }
 
-  footer section h4,
-  #nav-footer h4 {
-    text-align: left;
-    margin-left: 4em;
-  }
-
-  #nav-footer h4 {
-    width: 100%;
-    margin-left: 8em;
-  }
-
   footer section ul,
   #contact-footer ul {
-    margin-top: 4em;
+    margin-top: var(--spacing-large);
   }
 }
