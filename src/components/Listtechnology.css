@@ -13,6 +13,7 @@ grid-template-columns: repeat(
   minmax(var(--size-width-tecnology), 1fr)
 );
 gap: 32px;
+width: 98%;
 }
 
 
