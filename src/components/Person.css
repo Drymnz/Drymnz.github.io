@@ -1,62 +1,133 @@
+/* Fuente moderna desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Variables para mejor control */
 :root {
-  --color-lavanda-pálido: #1dece1; /* Corregido a minúsculas para consistencia */
+  --color-lavanda-pálido: #1dece1;
+  --color-sombra: rgba(0, 0, 0, 0.1);
+  --color-texto: #333;
+  --ancho-imagen: 20rem;
+  --radius-imagen: 1.5rem;
+  --transicion-suave: all 0.3s ease;
+  --padding-general: 3em;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Cambié la tipografía a una más moderna */
 }
 
 .person {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
-  width: var(--width-componet);
+  width: 98%;
   background: var(--color-lavanda-pálido);
+  padding: var(--padding-general);
+  box-sizing: border-box;
+  transition: var(--transicion-suave);
+}
+
+.info-content {
+  flex: 1;
+  text-align: left;
+  padding-right: 2em;
+  animation: fadeInLeft 1s ease-out;
 }
 
 .person h1 {
   font-size: 3rem;
-  margin-left: 1em; /* Consolidado */
+  margin: 0;
+  color: var(--color-texto);
+  transition: var(--transicion-suave);
 }
 
 .person p {
-  font-size: 1.2rem;
-  max-width: 50rem;
-  margin-left: 1em; /* Consolidado */
+  font-size: 1.1rem;
+  color: var(--color-texto);
+  line-height: 1.6;
+  max-width: 40rem;
+  margin-top: 1em;
+  transition: var(--transicion-suave);
 }
 
 .person img {
-  width: 20rem;
-  margin-right: 1em;
+  width: var(--ancho-imagen);
   height: auto;
+  border-radius: var(--radius-imagen);
   border: 0.5rem solid #000;
-  border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 4px 8px var(--color-sombra);
+  transition: var(--transicion-suave);
 }
 
-.person section {
-  padding: 0;
-  margin: 0;
-  border: 0;
+.photo-content {
+  flex: 1;
+  text-align: center;
+  animation: fadeInRight 1s ease-out;
 }
 
-/* Estilos para pantallas con un ancho menor a 670px */
+.person img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de entrada */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 670px) {
   .person {
-    flex-direction: column-reverse;
-    width: 100vw; /* Restablecido para ancho completo en pantallas pequeñas */
-    padding: 0;
-    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    width: 100%;
   }
 
-  #info {
+  .info-content {
     padding: 0 1em;
-  }
-
-  #info h1 {
-    margin-top: 0;
+    /* Agregado un margen superior para separar el texto */
   }
 
   #photo {
-    height: 50vh;
-    width: auto;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .person h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .person p {
+    font-size: 1rem;
+  }
+
+  .person img {
     margin: 0;
+    padding: 0;
+    height: 19rem;
+    width: auto;
   }
 }
