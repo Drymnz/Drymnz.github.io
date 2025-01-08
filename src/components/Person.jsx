@@ -1,6 +1,6 @@
 import "./Person.css"
 import PERSONA from "../assets/Json/Benjamin.json"
-import FOTO from '../assets/Img/Foto.jpg'
+import FOTO from '../assets/Img/Foto.jpeg'
 
 function Person({ refDiv }) {
   const { Nombre, Resumen } = PERSONA;
