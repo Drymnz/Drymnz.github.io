@@ -5,6 +5,7 @@ import LIST_PROYECT from "../assets/Json/ListProyect.json";
 // eslint-disable-next-line react/prop-types
 function ListProyects({ refDiv }) {
   const listProyects = LIST_PROYECT.List;
+  const websiteUrl = "https://www.amazon.com/dp/B0DP3N8MSZ/ref=apps_sf_sta";
   return (
     <>
     <h2 ref={refDiv}>Proyectos</h2>
@@ -17,6 +18,7 @@ function ListProyects({ refDiv }) {
             description={proyect.Description}
             useTechnology={proyect.UseTechnology}
             urlGithub={proyect.Link}
+            isPreview={proyect.preview}
           />
         ))}
       </div>

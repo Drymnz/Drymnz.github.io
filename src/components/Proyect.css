@@ -30,6 +30,11 @@
   height: 15em;
 }
 
+.proyect iframe{
+  width: 100%;
+  height: 15em;
+}
+
 /* Media Queries */
 @media (max-width: 1090px) {
   .proyects {
