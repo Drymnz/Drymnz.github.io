@@ -1,6 +1,9 @@
 {
-    "Nombre":"Benjamín de Jesús Pérez Aguilar",
-    "Edad":27,
-    "Resumen":"Soy una persona entusiasta, siempre dispuesta a incorporar nuevas actividades en mi vida para fomentar mi crecimiento personal y profesional. Me apasiona aprender constantemente y adquirir nuevas habilidades para seguir mejorando. Creo en la importancia de estar en desarrollo, lo que me motiva a salir de mi zona de confort y aprovechar cada oportunidad para crecer.",
-    "Img": "https://scontent.fgua3-6.fna.fbcdn.net/v/t31.18172-8/19400213_1987114814859384_7316372830110194514_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_ohc=8OKuRqwupCIQ7kNvgE5f3eP&_nc_ht=scontent.fgua3-6.fna&oh=00_AYDMwT_KO1mV0ziuScgZ38H94H-YLijX905vWU9Gzk5yKg&oe=66F44921"
+  "Nombre": "Benjamín de Jesús Pérez Aguilar",
+  "Edad": 28,
+  "Cargo": "Software Engineer | Entrepreneur",
+  "Ubicacion": "Quetzaltenango, Quetzaltenango.",
+  "LicenciaVehiculo": false,
+  "Resumen": "Soy una persona entusiasta, siempre dispuesta a incorporar nuevas actividades en mi vida para fomentar mi crecimiento personal y profesional. Me apasiona aprender constantemente y adquirir nuevas habilidades para seguir mejorando. Creo en la importancia de estar en desarrollo, lo que me motiva a salir de mi zona de confort y aprovechar cada oportunidad para crecer.",
+  "Img": "https://scontent.fgua3-6.fna.fbcdn.net/v/t31.18172-8/19400213_1987114814859384_7316372830110194514_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=53a332&_nc_ohc=8OKuRqwupCIQ7kNvgE5f3eP&_nc_ht=scontent.fgua3-6.fna&oh=00_AYDMwT_KO1mV0ziuScgZ38H94H-YLijX905vWU9Gzk5yKg&oe=66F44921"
 }

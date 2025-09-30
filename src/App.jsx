@@ -1,66 +1,37 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Person from './components/Person'
-import ListProyects from './components/ListProyects'
-import { Listtechnology } from './components/Listtechnology'
-import ListProgressCard from './components/ListProgressCard'
+import Education from './components/Education'
+import Experience from './components/Experience'
+import Information from './components/Information'
+import Personality from './components/Personality'
+import PlatformList from './components/PlatformList'
+import Technology from './components/Technology'
 
-
-import LIST_EDUCATION from './assets/Json/ListEducation.json'
-import LIST_OTRA_EDUCATION from './assets/Json/ListOtraEducation.json'
-import { useRef } from 'react'
-
-//<ProgressCard list={LIST_TECNOLOGY.Technology}></ProgressCard>
 function App() {
-  const listOne = LIST_EDUCATION.List
-  const listTwo = LIST_OTRA_EDUCATION.List
 
-  // Crear referencias para las secciones
-  const section1Ref = useRef(null);
-  const section2Ref = useRef(null);
-  const section3Ref = useRef(null);
-  const section4Ref = useRef(null);
-  const section5Ref = useRef(null);
+  const languages = [
+    { Title: "Español", Img: "https://cdn-icons-png.flaticon.com/512/197/197593.png" },
+    { Title: "Inglés A1", Img: "https://cdn-icons-png.flaticon.com/512/197/197374.png" }
+  ];
 
-
-
-  // Funciones para desplazar la vista a cada sección
-  const scrollToHome = () => {
-    section1Ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  const scrollToListProyect = () => {
-    section2Ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  const scrollToListtechnology = () => {
-    section3Ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
-  const scrollToEducation = () => {
-    section4Ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-  const scrollToFooter = () => {
-    section5Ref.current.scrollIntoView({ behavior: 'smooth' });
-  }
-
+  const platforms = [
+    { Title: "Linux", Img: "https://www.svgrepo.com/show/184138/linux.svg" },
+    { Title: "Windows", Img: "https://www.svgrepo.com/show/382713/windows-applications.svg" }
+  ];
   return (
     <>
-      <Header scrollToHome={scrollToHome} scrollToListProyect={scrollToListProyect} scrollToListtechnology={scrollToListtechnology} 
-      scrollToFooter={scrollToFooter} scrollToEducation={scrollToEducation}
-      />
-      <Person refDiv={section1Ref} />
-      <ListProyects refDiv={section2Ref} />
-      <Listtechnology refDiv={section3Ref} />
-      <h2 ref={section4Ref} >Títulos</h2>
-      <ListProgressCard  list={listOne} />
-      <h2>Diplomas</h2>
-      <ListProgressCard  list={listTwo} />
-      <Footer refDiv={section5Ref}
-      scrollToHome={scrollToHome} scrollToListProyect={scrollToListProyect} scrollToListtechnology={scrollToListtechnology} 
-      scrollToFooter={scrollToFooter} scrollToEducation={scrollToEducation}
-       />
+      <div className='container'>
+        <div className='left-div'>
+          <Personality />
+          <Technology />
+          <PlatformList title="enum LANGUAGES" data={languages} />
+          <PlatformList title="enum PLATFORMS" data={platforms} />
+        </div>
+        <div className='right-div'>
+          <Information />
+          <Experience />
+          <Education />
+        </div>
+      </div>
     </>
   )
 }

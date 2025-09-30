@@ -1,21 +1,19 @@
-// eslint-disable-next-line react/prop-types
-function Education({ title, active,  urlImg }) {
-  const COLOR_ACTIVE_TRUE = "#0BD450"
-  const COLOR_ACTIVE_FALSE = "#686384"
-  const activeColor = active ? COLOR_ACTIVE_TRUE : COLOR_ACTIVE_FALSE;
+import EDUCATION_DATA from "../assets/Json/ListEducation.json"
+
+function Education() {
   return (
-    <>
-      <div className="education">
-        <h2>{title}</h2>
-        <section>
-          <img src={urlImg} alt="" />
-          <svg width="20" height="20">
-            <circle cx="10" cy="10" r="10" fill={activeColor} />2
-          </svg>
-        </section>
-      </div>
-    </>
-  )
+    <div className="education">
+        <h1 className="section-title">purip static class EDUCATION</h1>
+        {EDUCATION_DATA.List.map((edu, index) => (
+            <div key={index} className="education-item">
+                <p><span className="keyword">private void</span> <span className="function">University()</span></p>
+                <p className="indent"><span className="keyword">var</span> Level = <span className="string">"{edu.Title}"</span>,</p>
+                <p className="indent"><span className="keyword">var</span> Date = <span className="string">"{edu.Year}"</span>,</p>
+                <p className="indent"><span className="keyword">var</span> Institution = <span className="string">"{edu.Institution}"</span></p>
+            </div>
+        ))}
+    </div>
+  );
 }
 
-export default Education
+export default Education;
