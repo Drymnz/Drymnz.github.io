@@ -39,6 +39,7 @@ body {
 .left-div {
     flex: 1;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .right-div {
@@ -47,22 +48,23 @@ body {
     overflow-y: auto;
 }
 
-/* Scrollbar personalizado */
+/* Ocultar scrollbar pero mantener funcionalidad */
+.left-div::-webkit-scrollbar,
 .right-div::-webkit-scrollbar {
-    width: 8px;
+    width: 0px;
+    display: none;
 }
 
-.right-div::-webkit-scrollbar-track {
-    background: #1a1a1a;
+/* Para Firefox */
+.left-div,
+.right-div {
+    scrollbar-width: none;
 }
 
-.right-div::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 4px;
-}
-
-.right-div::-webkit-scrollbar-thumb:hover {
-    background: #444;
+/* Para IE y Edge legacy */
+.left-div,
+.right-div {
+    -ms-overflow-style: none;
 }
 
 /* ============================================

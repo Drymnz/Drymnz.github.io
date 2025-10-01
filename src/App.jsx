@@ -9,13 +9,13 @@ import Technology from './components/Technology'
 function App() {
 
   const languages = [
-    { Title: "Español", Img: "https://cdn-icons-png.flaticon.com/512/197/197593.png" },
-    { Title: "Inglés A1", Img: "https://cdn-icons-png.flaticon.com/512/197/197374.png" }
+    { Title: "Español", Img: "spanish.png" },
+    { Title: "Inglés A1", Img: "ingles.png" }
   ];
 
   const platforms = [
-    { Title: "Linux", Img: "https://www.svgrepo.com/show/184138/linux.svg" },
-    { Title: "Windows", Img: "https://www.svgrepo.com/show/382713/windows-applications.svg" }
+    { Title: "Linux", Img: "linux.svg" },
+    { Title: "Windows", Img: "windows-applications.svg" }
   ];
   return (
     <>
